@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive SaaS Marketplace</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cardcss.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+    <div class="container d-flex fw-bold fs-7 justify-content-right">
+        <!-- Brand Logo -->
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="#" style="margin-right: 0px;">
+            <img src="logoLight.png" alt="Logo" style="height: 30px; margin-right: 0px;" >
+        </a>
+        
+        <!-- Toggle button for mobile view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links and Button -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <!-- Sellers Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="sellersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sellers
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="sellersDropdown">
+                        <li><a class="dropdown-item" href="#">Sell</a></li>
+                        <li><a class="dropdown-item" href="#">Sell</a></li>
+                        <li><a class="dropdown-item" href="#">Sell</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Buyers Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="buyersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Buyers
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="buyersDropdown">
+                        <li><a class="dropdown-item" href="#">Buyer</a></li>
+                        <li><a class="dropdown-item" href="#">Buyer</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Pricing Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="pricingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pricing
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="pricingDropdown">
+                        <li><a class="dropdown-item" href="#">Standard Plan</a></li>
+                        <li><a class="dropdown-item" href="#">Premium Plan</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Resources Link -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resources</a>
+                </li>
+            </ul>
+             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Free SaaS valuation</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="menu1.jpg" class="rounded-circle me-2" width="20" height="20">
+                
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+           
+          
+        </div>
+    </div>
+    
+</nav>
+
+<!-- Main Content Section -->
+<!-- <section class="container text-center my-5">
+    <h1 class="display-5 fw-bold">The best online marketplace to buy and sell SaaS startups</h1>
+    <p class="lead">Join 500k+ SaaS entrepreneurs closing life-changing deals. Buy and sell startups in as little as 90 days with help from expert advisors and tools.</p>
+    <div class="input-group my-4 w-50 mx-auto">
+        <input type="email" class="form-control" placeholder="Enter your email">
+        <button class="btn btn-primary">Get Rewind</button>
+    </div>
+    <div class="d-flex justify-content-center my-4">
+        <a href="#" class="btn btn-dark mx-2"><i class="bi bi-apple"></i> App Store</a>
+        <a href="#" class="btn btn-dark mx-2"><i class="bi bi-google-play"></i> Google Play</a>
+    </div>
+</section> -->
+<div class="container-fluid mb-0">
+   
+    <div class="row" style="height: 55vh;">
+        <div class="col d-flex flex-column align-items-center">
+           <h1 class="ms-5 mt-5 display-6 fw-bold">The best online marketplace to buy and sell SaaS startups</h1>
+    <p class="ms-5 fs-7 lead" >Join 500k+ SaaS entrepreneurs closing life-changing deals. Buy and sell startups in as little as 90 days with help from expert advisors and tools.</p>
+    <div class="input-group my-1 w-50 mx-auto email-form">
+        <input type="text" id="email" name="email" class="form-control" placeholder="Enter your email">
+        <button class="btn btn-primary email-button" onclick="validateEmail()">Get Rewind</button>
+    </div>
+    <div class="d-flex justify-content-center mt-3">
+        <a href="#" class="btn btn-dark mx-2"><i class="bi bi-apple"></i> App Store</a>
+        <a href="#" class="btn btn-dark mx-2"><i class="bi bi-google-play"></i> Google Play</a>
+    </div>
+        </div>
+          <div class="col">
+                    <div class="row" style="height: 55vh;">
+                    <div class="col-auto flex-shrink-0 card-container" id="card-container" style="width: 40%; ;gap: 90px;">
+                        <div class="card" id="card1" style="width: 90%;height: 55%; background-color: #AFBBE0;;margin-top:5px;margin-left:15px">
+                    
+
+                        </div>
+                              <div class="card" style="width: 90%;height: 30%; background-color: #AFBBE0;;margin-left:15px">
+                    
+
+                        </div>
+                    </div>
+
+           <div class="col-auto flex-shrink-0 card-container" id="card-container" style="width: 40%; ;gap: 30px;">
+                        <div class="card" style="width: 90%;height: 30%; background-color: #AFBBE0;;border-radius: 0 0 15px 15px;margin-left:15px;">
+            
+
+                </div>
+                   <div class="card" id="card2" style="width: 90%;height: 50%; background-color: #AFBBE0;;border-radius: 0  15px 0 0;margin-left:15px">
+            
+                </div>
+            </div>
+<div class="col-auto flex-shrink-0 card-container" id="card-container" style="width: 20%; ;gap: 30px;overflow: hidden;">
+                       <div class="card" style="width: 100%;height: 60%; background-color: #AFBBE0;;border-radius: 0 0 0 15px;margin-left:15px">
+
+
+    </div>
+         <div class="card" style="width: 100%;height: 40%; background-color: #AFBBE0;;border-radius: 0 0 0 0;margin-left:15px">
+
+
+    </div>
+</div>
+    </div>
+        </div>
+    </div>
+    
+    
+</div>
+
+<!-- Stats Section -->
+<section class="container-fluid pb-0 pt-5 mt-0" style="background-color: #AFBBE0;">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4">
+                <h2 style="font-weight: 700;">500k+</h2>
+                <p>Registered buyers and sellers</p>
+            </div>
+            <div class="col-md-4">
+                <h2 style="font-weight: 700;">$500M+</h2>
+                <p>Total acquisitions closed</p>
+            </div>
+            <div class="col-md-4">
+                <h2 style="font-weight: 700;">#1</h2>
+                <p>Product Hunt Product of the Day</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="container-fluid text-center pb-4 bg-white mt-5">
+    <p class="mb-0">Start connecting with the world now!</p>
+    <div class="d-flex justify-content-center my-2">
+        <a href="#" class="btn btn-dark mx-2"><i class="bi bi-apple"></i> App Store</a>
+        <a href="#" class="btn btn-dark mx-2"><i class="bi bi-google-play"></i> Google Play</a>
+    </div>
+     <div class="mt-3">
+      <a href="#" class="footer-class">Slowly Stories</a> |
+      <a href="#" class="footer-class">Blog</a> |
+      <a href="#" class="footer-class">Release Notes</a> |
+      <a href="#" class="footer-class">Guidelines</a> |
+      <a href="#" class="footer-class">Safety Tips</a> |
+      <a href="#" class="footer-class">Contact Us</a>
+    </div>
+</footer>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const cardContent1 = document.getElementById('card-content1');
+     const cardContent2 = document.getElementById('card-content2');
+     
+    
+    // Simulating the image folder (You would normally fetch these paths from a server)
+    const images = [
+      'cover/image1.jpg',
+      'cover/image2.jpg',
+      'cover/image3.jpg',
+      'cover/image4.jpg',
+      'cover/image5.jpg',
+      'cover/image6.jpg',
+      'cover/image7.jpg',
+    ];
+
+    // Function to get random image (to simulate dynamic image picking)
+    function getRandomImage() {
+      const randomIndex = Math.floor(Math.random() * images.length); // Random index for image selection
+      return images[randomIndex];
+    }
+
+    const image = getRandomImage(); 
+    document.getElementById("card1").style.backgroundImage=`url(${image})`;
+
+    const image1 = getRandomImage(); 
+    document.getElementById("card2").style.backgroundImage=`url(${image1})`;
+
+  
+    
+   
+  });
+</script>
+</body>
+
+</html>

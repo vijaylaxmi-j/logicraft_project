@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive SaaS Marketplace</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="cardcss.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+    <div class="container d-flex justify-content-center">
+        <!-- Brand Logo -->
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+            <img src="logo.png" alt="Logo" style="height: 30px; margin-right: 10px;"> LOGICRAFT INFOTECH
+        </a>
+        
+        <!-- Toggle button for mobile view -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links and Button -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <!-- Sellers Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="sellersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sellers
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="sellersDropdown">
+                        <li><a class="dropdown-item" href="#">Sell a SaaS</a></li>
+                        <li><a class="dropdown-item" href="#">Seller Dashboard</a></li>
+                        <li><a class="dropdown-item" href="#">Resources</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Buyers Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="buyersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Buyers
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="buyersDropdown">
+                        <li><a class="dropdown-item" href="#">Browse Listings</a></li>
+                        <li><a class="dropdown-item" href="#">Buyer Dashboard</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Pricing Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="pricingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pricing
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="pricingDropdown">
+                        <li><a class="dropdown-item" href="#">Standard Plan</a></li>
+                        <li><a class="dropdown-item" href="#">Premium Plan</a></li>
+                    </ul>
+                </li>
+                
+                <!-- Resources Link -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resources</a>
+                </li>
+            </ul>
+
+            <!-- Free SaaS Valuation Button -->
+            <button class="btn btn-primary ms-3">Free SaaS valuation</button>
+
+            <!-- Profile Icon -->
+            <div class="ms-3">
+                <a href="#" class="nav-link">
+                    <img src="profile-icon.png" alt="Profile" style="width: 30px; border-radius: 50%;">
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content Section -->
+<!-- <section class="container text-center my-5">
+    <h1 class="display-5 fw-bold">The best online marketplace to buy and sell SaaS startups</h1>
+    <p class="lead">Join 500k+ SaaS entrepreneurs closing life-changing deals. Buy and sell startups in as little as 90 days with help from expert advisors and tools.</p>
+    <div class="input-group my-4 w-50 mx-auto">
+        <input type="email" class="form-control" placeholder="Enter your email">
+        <button class="btn btn-primary">Get Rewind</button>
+    </div>
+    <div class="d-flex justify-content-center my-4">
+        <a href="#" class="btn btn-dark mx-2"><i class="bi bi-apple"></i> App Store</a>
+        <a href="#" class="btn btn-dark mx-2"><i class="bi bi-google-play"></i> Google Play</a>
+    </div>
+</section> -->
+<div class="container-fluid">
+   
+    <div class="row" style="height: 60vh;">
+        <div class="col d-flex flex-column align-items-center">
+           <h1 class="ms-5 mt-5 display-6 fw-bold">The best online marketplace to buy and sell SaaS startups</h1>
+    <p class="ms-5 lead" >Join 500k+ SaaS entrepreneurs closing life-changing deals. Buy and sell startups in as little as 90 days with help from expert advisors and tools.</p>
+    <div class="input-group my-4 w-50 mx-auto">
+        <input type="email" class="form-control" placeholder="Enter your email">
+        <button class="btn btn-primary">Get Rewind</button>
+    </div>
+    <div class="d-flex justify-content-center my-4">
+        <a href="#" class="btn btn-dark mx-2"><i class="bi bi-apple"></i> App Store</a>
+        <a href="#" class="btn btn-dark mx-2"><i class="bi bi-google-play"></i> Google Play</a>
+    </div>
+        </div>
+          <div class="col d-flex justify-content-center align-items-center">
+            
+        </div>
+    </div>
+    
+    
+</div>
+
+<!-- Stats Section -->
+<section class="container-fluid bg-success py-5">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>500k+</h2>
+                <p>Registered buyers and sellers</p>
+            </div>
+            <div class="col-md-4">
+                <h2>$500M+</h2>
+                <p>Total acquisitions closed</p>
+            </div>
+            <div class="col-md-4">
+                <h2>#1</h2>
+                <p>Product Hunt Product of the Day</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="container-fluid text-center py-4 bg-white border-top mt-5">
+    <p class="mb-0">Start connecting with the world now!</p>
+    <div class="d-flex justify-content-center my-2">
+        <a href="#" class="btn btn-dark mx-2"><i class="bi bi-apple"></i> App Store</a>
+        <a href="#" class="btn btn-dark mx-2"><i class="bi bi-google-play"></i> Google Play</a>
+    </div>
+    <small class="d-block">© 2023 LOGICRAFT INFOTECH. All rights reserved.</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const cardContainer = document.getElementById('card-container');
+     const cardContainer1 = document.getElementById('card-container1');
+      const cardContainer2 = document.getElementById('card-container2');
+    
+    // Simulating the image folder (You would normally fetch these paths from a server)
+    const images = [
+      'cover/image1.jpg',
+      'cover/image2.jpg',
+      'cover/image3.jpg',
+      'cover/image4.jpg',
+      'cover/image5.jpg',
+      'cover/image6.jpg',
+      'cover/image7.jpg',
+    ];
+
+    // Function to get random image (to simulate dynamic image picking)
+    function getRandomImage() {
+      const randomIndex = Math.floor(Math.random() * images.length); // Random index for image selection
+      return images[randomIndex];
+    }
+
+    // Create 4 cards with alternating images
+    for (let i = 0; i < 4; i++) {
+      const card = document.createElement('div');
+      card.classList.add('card');
+
+      // Alternating between two images (simulating dynamic image pick)
+      
+      if(i%2==0){
+        const image = getRandomImage(); 
+        card.style.backgroundImage = `url(${image})`;
+
+      } else{
+card.style.backgroundColor="#000000" 
+      }// Pick a random image dynamically
+     
+      // Add some content inside the card
+      const cardContent = document.createElement('div');
+      cardContent.classList.add('card-content');
+      cardContent.textContent = `Card ${i + 1}`;
+
+      card.appendChild(cardContent);
+      cardContainer.appendChild(card);
+
+ 
+    }
+     for (let i = 1; i <= 4; i++) {
+      const card1 = document.createElement('div');
+      card1.classList.add('card1');
+
+      // Alternating between two images (simulating dynamic image pick)
+      
+      if(i%2==0){
+        const image = getRandomImage(); 
+        card1.style.backgroundImage = `url(${image})`;
+
+      } else{
+card1.style.backgroundColor="#000000" 
+      }// Pick a random image dynamically
+     
+     
+
+       // Add some content inside the card
+      const cardContent1 = document.createElement('div');
+      cardContent1.classList.add('card-content');
+      cardContent1.textContent = `Card ${i + 1}`;
+
+      card1.appendChild(cardContent1);
+      cardContainer1.appendChild(card1);
+    }
+     for (let i = 1; i <= 4; i++) {
+      const card2 = document.createElement('div');
+      card2.classList.add('card2');
+card2.style.backgroundColor="#000000" 
+       // Add some content inside the card
+      const cardContent2 = document.createElement('div');
+      cardContent2.classList.add('card-content');
+      cardContent2.textContent = `Card ${i + 1}`;
+
+      card2.appendChild(cardContent2);
+      cardContainer2.appendChild(card2);
+    }
+  });
+</script>
+</body>
+</html>

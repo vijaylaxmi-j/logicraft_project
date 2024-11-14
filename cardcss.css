@@ -1,0 +1,234 @@
+/* Basic styling for the card container */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    /* Arrange cards vertically */
+    gap: 50px;
+    /* Add gap between cards */
+    padding: 0;
+    max-height: 100%;
+    /* Remove padding */
+    z-index:-1;
+}
+.card-container2 {
+    display: flex;
+    flex-direction: column;
+    /* Arrange cards vertically */
+    gap: 20px;
+    /* Add gap between cards */
+    padding: 0;
+    /* Remove padding */
+    z-index: -1;
+}
+
+
+/* Basic styling for the individual cards */
+.card {
+    width: 30vh;
+    height: 40vh;
+
+    border: 1px solid #ccc;
+        /* Add border */
+        border-radius: 0 15px 0 0;
+    background-size: cover;
+    /* Make the image cover the card */
+    background-position: center;
+    /* Center the image */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 10px; */
+    opacity: 1;
+    /* Cards will start hidden */
+    /* transform: translateY(100%); */
+    /* Cards start below the container */
+    /* animation: slide-up 5s infinite; */
+    /* Animation applied to each card */
+    position: relative;
+    /* For overlaying text/content */
+    /* overflow: hidden; */
+    /* Ensure the image doesn't overflow outside the card */
+}
+
+.card1 {
+    width:40vh;
+    height: 40vh;
+
+    border: 1px solid #ccc;
+    /* Add border */
+    border-radius: 0 15px 0 0;
+    background-size: cover;
+    /* Make the image cover the card */
+    background-position: center;
+    /* Center the image */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 10px; */
+    opacity: 0;
+    /* Cards will start hidden */
+    /* transform: translateY(100%); */
+    /* Cards start below the container */
+    /* animation: slide-up1 5s infinite; */
+    /* Animation applied to each card */
+    position: relative;
+    /* For overlaying text/content */
+    overflow: hidden;
+    /* Ensure the image doesn't overflow outside the card */
+}
+.card2 {
+    width: 40vh;
+    height: 40vh;
+
+    border: 1px solid #ccc;
+    /* Add border */
+    border-radius: 0 15px 0 0;
+    background-size: cover;
+    /* Make the image cover the card */
+    background-position: center;
+    /* Center the image */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 10px; */
+    opacity: 0;
+    /* Cards will start hidden */
+    transform: translateY(100%);
+    /* Cards start below the container */
+    animation: slide-up1 5s infinite;
+    /* Animation applied to each card */
+    position: relative;
+    /* For overlaying text/content */
+    overflow: hidden;
+    /* Ensure the image doesn't overflow outside the card */
+}
+
+/* Styling for the content inside the card */
+.card-content {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Staggered animation using nth-child */
+/*  */
+.card:nth-child(1) {
+    animation-delay: 0.2s;
+    /* Delay for the first card */
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.2s;
+    /* Delay for the second card */
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.6s;
+    /* Delay for the third card */
+}
+
+.card:nth-child(4) {
+    animation-delay: 0.8s;
+    /* Delay for the fourth card */
+}
+/* Staggered animation using nth-child */ 
+.card:nth-child(1) {
+    animation-delay: 0.2s;
+    /* Delay for the first card */
+}
+
+.card1:nth-child(2) {
+    animation-delay: 0.2s;
+    /* Delay for the second card */
+}
+
+.card1:nth-child(3) {
+    animation-delay: 0.6s;
+    /* Delay for the third card */
+}
+
+.card1:nth-child(4) {
+    animation-delay: 0.8s;
+    /* Delay for the fourth card */
+}
+
+/* Keyframe animation to slide the cards up */
+ @keyframes slide-up {
+     from {
+         transform: translateY(100%);
+         opacity: 1;
+     }
+
+     to {
+         transform: translateY(0%);
+         opacity: 1;
+     }
+ }
+@keyframes slide-up1 {
+    0% {
+        opacity: 1;
+        /* Cards start invisible */
+        transform: translateY(100%);
+        /* Cards start below */
+    }
+
+    5%,
+    20% {
+        transform: translateY(100%);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        /* Cards end fully visible */
+        transform: translateY(0);
+        /* Cards slide up to their final position */
+    }
+}
+
+#card2 {
+  
+    opacity: 0;
+    /* Initially hidden */
+    animation: fadeSlideInBottom 2s forwards;
+    /* Fade in animation */
+}
+
+
+#card2 img {
+  
+    animation: fadeSlideInBottom 2s step-end;
+}
+
+#card1 {
+
+    opacity: 0;
+    /* Initially hidden */
+    animation: fadeSlideInBottom 2s forwards;
+    /* Fade in animation */
+}
+
+
+#card1 img {
+
+    animation: fadeSlideInBottom 2s forwards;
+}
+
+
+@keyframes fadeSlideInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
